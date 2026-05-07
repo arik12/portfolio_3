@@ -1,0 +1,200 @@
+/* ===== RESET DEFAULT BROWSER STYLES ===== */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     /* Includes padding & border in width/height */
+}
+
+/* ===== BODY STYLING ===== */
+body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: #f4f4f4;
+     /* Light gray background */
+     padding: 30px 10px;
+     line-height: 1.6;
+     /* Improves readability */
+}
+
+/* ===== MAIN CONTAINER ===== */
+.cv-container {
+     max-width: 950px;
+     margin: 0 auto;
+     /* Center horizontally */
+     background: white;
+     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+     overflow: hidden;
+     border-radius: 8px;
+}
+
+/* ===== HEADER SECTION ===== */
+.header {
+     background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+     /* Gradient background */
+     color: white;
+     padding: 45px 40px;
+     text-align: center;
+}
+
+/* Name styling */
+.header h1 {
+     font-size: 42px;
+     margin-bottom: 8px;
+}
+
+/* Subtitle (job title) */
+.header p {
+     font-size: 20px;
+     opacity: 0.95;
+}
+
+/* Contact info container */
+.contact-info {
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     /* Wrap on smaller screens */
+     gap: 20px;
+     font-size: 14.5px;
+}
+
+/* Contact links */
+.contact-info a {
+     color: white;
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     /* Space between icon and text */
+}
+
+/* ===== MAIN CONTENT LAYOUT ===== */
+.main-content {
+     display: flex;
+     /* Two-column layout */
+}
+
+/* Left column (main content) */
+.left-column {
+     flex: 2;
+     /* Takes more space */
+     padding: 40px;
+}
+
+/* Right column (sidebar) */
+.right-column {
+     flex: 1;
+     background: #f8fafc;
+     padding: 40px 35px;
+     border-left: 1px solid #e5e7eb;
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title {
+     font-size: 22px;
+     color: #1e40af;
+     margin-bottom: 18px;
+     padding-bottom: 8px;
+     border-bottom: 3px solid #3b82f6;
+     font-weight: 700;
+}
+
+/* Section spacing */
+.section-block {
+     margin-bottom: 35px;
+}
+
+/* Paragraph text */
+.text {
+     color: #374151;
+}
+
+/* ===== JOB / EXPERIENCE ===== */
+.job {
+     margin-bottom: 28px;
+}
+
+/* Job title */
+.job-title {
+     font-size: 18px;
+     font-weight: 600;
+     color: #1f2937;
+}
+
+/* Company name */
+.company {
+     color: #2563eb;
+     font-weight: 500;
+}
+
+/* Date aligned to right */
+.date {
+     color: #6b7280;
+     font-size: 14px;
+     float: right;
+}
+
+/* ===== LIST STYLING ===== */
+ul {
+     margin-left: 20px;
+     margin-top: 10px;
+}
+
+ul li {
+     margin-bottom: 8px;
+}
+
+/* ===== SKILLS TAGS ===== */
+.skill {
+     background: #e0f2fe;
+     color: #1e40af;
+     padding: 6px 14px;
+     margin: 5px 4px 5px 0;
+     border-radius: 20px;
+     /* Rounded pill shape */
+     display: inline-block;
+     font-size: 14px;
+}
+
+/* ===== PROJECT SECTION ===== */
+.project {
+     margin-bottom: 22px;
+     padding-left: 15px;
+     border-left: 4px solid #3b82f6;
+     /* Accent line */
+}
+
+/* Project tech stack text */
+.project small {
+     color: #64748b;
+}
+
+/* ===== EDUCATION TEXT ===== */
+.edu {
+     color: #64748b;
+     font-size: 14px;
+}
+
+/* ===== FOOTER NOTE ===== */
+.footer-note {
+     text-align: center;
+     margin-top: 20px;
+     color: #666;
+     font-size: 14px;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+
+     /* Remove body padding when printing */
+     body {
+          padding: 0;
+     }
+
+     /* Remove shadow & rounded corners for clean print */
+     .cv-container {
+          box-shadow: none;
+          border-radius: 0;
+     }
+}
